@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sasta Insta Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <div class="UserDetails">
+          <div class="profile_img">
+            <img src="logo.jpg" class="cover" />
+          </div>
+          <h3>Subhankar Kundu<br /><span>Kolkata,India</span></h3>
+        </div>
+        <div>
+          <img src="dot.png" class="dot" />
+        </div>
+      </div>
+      <div class="imgBx">
+        <img src="img.jpg" class="cover" />
+      </div>
+      <div class="actionBtns">
+        <div class="left">
+          <img src="heart.png" class="heart" onclick="likeButton()" />
+          <img src="comment.png" />
+          <img src="share.png" />
+        </div>
+        <div class="right">
+          <img src="bookmark.png" />
+        </div>
+      </div>
+      <h4 class="likes">102 likes</h4>
+      <h4 class="message">
+        <b>subhankarKundu43</b> Happy Af <span>#cards</span><span>#html</span
+        ><span>#css</span>
+      </h4>
+      <h4 class="comments">view 36 comments</h4>
+      <div class="addComments">
+        <div class="userImg">
+          <img src="user.jpg" class="cover" />
+        </div>
+        <input type="text" class="text" placeholder="Add a comment....." />
+      </div>
+      <h5 class="PostTime">10 MINUTES AGO</h5>
+    </div>
+    <script>
+      function likeButton() {
+        let heart = document.querySelector(".heart");
+        let likes = document.querySelector(".likes");
+
+        if (heart.src.match("heart.png")) {
+          heart.src = "heart_red.png";
+          likes.innerHTML = "Liked by you and 102 others";
+        } else {
+          heart.src = "heart.png";
+          likes.innerHTML = "102 likes";
+        }
+      }
+    </script>
+  </body>
+</html>
