@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Sasta Insta Card</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Subhankar43/Insta-profile-Clone/style.css" />
   </head>
   <body>
     <div class="card">
@@ -45,19 +45,6 @@
       </div>
       <h5 class="PostTime">10 MINUTES AGO</h5>
     </div>
-    <script>
-      function likeButton() {
-        let heart = document.querySelector(".heart");
-        let likes = document.querySelector(".likes");
-
-        if (heart.src.match("heart.png")) {
-          heart.src = "heart_red.png";
-          likes.innerHTML = "Liked by you and 102 others";
-        } else {
-          heart.src = "heart.png";
-          likes.innerHTML = "102 likes";
-        }
-      }
-    </script>
+<script src="script.js"></script>
   </body>
 </html>
