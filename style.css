@@ -5,7 +5,8 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-body {
+
+body{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +18,7 @@ body {
   width: 360px;
   min-height: 400px;
   background: #fff;
-  box-shadow: 15px 15px 60px rgb(0, 0, 0);
+  box-shadow: 15px 15px 65px rgb(0, 0, 0);
   padding: 20px;
 }
 .card .top {
